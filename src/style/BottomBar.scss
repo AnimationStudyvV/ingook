@@ -1,0 +1,147 @@
+
+button{
+    border: none;
+}
+
+#testbox{
+    width: 100vw;
+    height:100vh ;
+    background-color: #222327;
+}
+
+#Phone{
+    display: flex;
+    overflow: auto;
+    resize: both;
+    margin: auto;
+    width: 414px;
+    height: 896px;
+    min-width: 400px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#BottomBar{
+width: 100%;
+height: 70px;
+padding: 0px 25px;
+width: calc(100% - 50px);
+background-color: white;
+border-radius: 5px;
+// overflow: hidden;
+
+// background-color: red;
+    #safezoon{
+        width: 100%;
+        position: relative;
+        #BarCircle{
+            position: absolute;
+            z-index: 1;
+            width: 20%;
+            height: 100%;
+            // background-color: red;
+            display: flex;
+            justify-content: center;
+            transition: left 0.5s;
+            #Circle{
+                height: 70px;
+                width: 70px;
+                border-radius: 999px;
+                margin-top: -35px;
+                background-color: #222327;
+                #InnerCircle{
+                    height: 60px;
+                    width: 60px;
+                    margin: 5px;
+                    border-radius: 999px;
+                    background-color: orange;
+                }
+            }
+        
+        }
+
+        .select0{
+            left: 0%;
+        }
+        .select1{
+            left: 20%;
+        }
+        .select2{
+            left: 40%;
+        }
+        .select3{
+            left: 60%;
+        }
+        .select4{
+            left: 80%;
+        }
+        
+        #BarButtons{
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            ul{
+                width: 100%;
+                list-style: none;
+                padding: 0;
+                display: flex;
+            }
+            li{
+                width: 20%;
+                button{
+                    background-color:transparent;
+
+                    
+                    .ButtonInfo{
+                        height: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        position: relative;
+    
+                        img{
+                            transition: top 0.5s;
+                            position: relative;
+                            width: 30px;
+                            height: 30px;
+                            top : 0px;
+                        }
+                        span{
+                            transition: top 0.5s;
+                            width: 30px;
+                            text-align: center;
+                            top : -20px;
+                            opacity: 0;
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+
+                button.select{
+                    background-color:transparent;
+                    
+                    .ButtonInfo{
+  
+                        img{
+                            top : -30px;
+                        }
+                        span{
+                            top : 0px;
+                            opacity: 1;
+                        }
+                    }
+                }
+              
+                
+            }
+
+        }
+    }
+
+}
+.button{
+    
+}
+
