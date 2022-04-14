@@ -1,0 +1,121 @@
+
+
+
+
+#NeonBox{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #050505;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#Mirror{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000001f;
+    top: 50%;
+    left: 18.8%;
+    transform: rotate(-45deg);
+}
+
+
+#Neon{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: none;
+    background-color: #0fa;
+    
+    box-shadow:  0 0 7px #0fa, 0 0 10px #0fa, 0 0 21px #0fa, 0 0 42px #0fa,
+    0 0 82px;
+}
+
+#Neon.origin{
+
+    top: calc(50vh - 250px);
+    left: calc(50vw - 125px);
+    transform-origin: bottom right;
+    transform: rotateZ(-45deg);  
+    animation: loopA 2.5s infinite linear;
+}
+
+#Neon.mirror{
+    top: calc(50vh - 0px);
+    left: calc(50vw - 125px);
+
+    opacity: 0.1;
+    transform-origin: top right;
+    transform: rotateZ(45deg); 
+    animation: loopB 2.5s infinite linear;
+}
+
+
+@keyframes loopA {
+    0% {
+        transform: rotateZ(-45deg) translateY(0px);  
+    }
+    50% {
+        transform: rotateZ(45deg) translateY(0px); 
+    }
+    60% {
+        transform: rotateZ(45deg) translateY(50px); 
+    }
+    70% {
+        transform: rotateZ(45deg) translateY(100px);  
+    }
+    80% {
+        transform: rotateZ(45deg) translateY(150px); 
+    }
+    90% {
+        transform: rotateZ(45deg) translateY(200px); 
+    }
+    100% {
+        transform: rotateZ(45deg) translateY(250px); 
+    }
+  }
+
+  @keyframes loopB {
+    0% {
+        transform: rotateZ(-45deg) translateY(0px); 
+    }
+    50% {
+        transform: rotateZ(-135deg) translateY(0px); 
+    }
+    60% {
+        transform: rotateZ(-135deg) translateY(-50px); 
+    }
+    70% {
+        transform: rotateZ(-135deg) translateY(-100px); 
+    }
+    80% {
+        transform: rotateZ(-135deg) translateY(-150px); 
+    }
+    90% {
+        transform: rotateZ(-135deg) translateY(-200px); 
+    }
+    100% {
+        transform: rotateZ(-135deg) translateY(-250px); 
+    }
+  }
+
+
+
+#Gradient{
+    mask:radial-gradient(circle at center,transparent 25%, black 35.5%);
+    margin: auto;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}

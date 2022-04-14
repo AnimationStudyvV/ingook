@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import NeonBox from "./component/Neon/NeonBox";
 
 import Phone from './component/Phone';
 class TextBox extends Component {
@@ -6,7 +7,8 @@ class TextBox extends Component {
     const name = "react";
     return (
       <div id = "testbox">
-        <Phone/>
+        {/* <Phone/> */}
+        <NeonBox/>
       </div>
       )
   }

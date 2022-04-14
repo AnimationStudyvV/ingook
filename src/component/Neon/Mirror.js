@@ -1,18 +1,19 @@
 import React, { Component } from "react";
-import BottomBar from './BottomBar';
-class Phone extends Component {
+import Neon from './Neon';
+import Gradient from './Gradient';
+class Mirror extends Component {
 
 
     render() {
         const name = "react";
         return (
             
-            <div id="Phone">
-                {/* <BottomBar/> */}
+            <div id="Mirror">
+
             </div>
             
         )
     }
 }
 
-export default Phone;
+export default Mirror;
